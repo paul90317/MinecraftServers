@@ -8,7 +8,7 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="https://drive.google.com/drive/folders/1gub1lQ1f2cNFbHghFcR-gMGWynLuEAfp?usp=sharing/MinecraftServers.application" />
+    <deploymentProvider codebase="https://paul90317.github.io/MinecraftServers/publish//MinecraftServers.application" />
   </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
