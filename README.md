@@ -7,6 +7,7 @@ This is an application that can create server easily
 
 [下載更新檔](https://paul90317.github.io/MinecraftServers/publish/MinecraftServers.application)  
 * 下載點擊後自動更新!!!  
-## 相關頁面
+
+## 相關頁面  
 [page 首頁](https://paul90317.github.io/MinecraftServers/)  
 [原始碼](https://github.com/paul90317/MinecraftServers/)  
