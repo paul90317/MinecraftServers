@@ -24,21 +24,56 @@ namespace MinecraftServers
         [STAThread]
         static void Main()
         {
-            useful.get_dir_or_create("../MinecraftServers-Datas");
-            Directory.SetCurrentDirectory("../MinecraftServers-Datas");
-            load_properties_show();
-            load_version_mapping();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            now = new menu();
-            while (now != null)
+            try
             {
-                Form tmp = now;
-                now = null;
-                Application.Run(tmp);
+                useful.get_dir_or_create("../MinecraftServers-Datas");
+                Directory.SetCurrentDirectory("../MinecraftServers-Datas");
             }
-            save_proc_show();
-            save_version_mapping();
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            try
+            {
+                load_properties_show();
+                load_version_mapping();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            try {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                now = new menu();
+                while (now != null)
+                {
+                    Form tmp = now;
+                    now = null;
+                    Application.Run(tmp);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            try
+            {
+                save_version_mapping();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            try
+            {
+                save_proc_show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         static public string[] get_entry_setting(string entry_name)
         {
