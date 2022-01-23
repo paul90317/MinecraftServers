@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1738
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftServers", "MinecraftServers.csproj", "{9705535F-3107-409E-A114-CE77CABABEEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9705535F-3107-409E-A114-CE77CABABEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9705535F-3107-409E-A114-CE77CABABEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9705535F-3107-409E-A114-CE77CABABEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9705535F-3107-409E-A114-CE77CABABEEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BCD8403-03E4-4B53-B998-166075111FD8}
+	EndGlobalSection
+EndGlobal
