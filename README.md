@@ -5,6 +5,9 @@ This is an application that can create server easily
 [下載安裝檔](https://paul90317.github.io/MinecraftServers/publish.zip)  
 * 將壓縮檔解壓縮，點擊 "MinecraftServers.application"，即可安裝。  
 
+[下載安裝檔(setup.exe)](https://paul90317.github.io/MinecraftServers/publish/setup.exe)  
+* 點擊即可安裝。  
+
 [下載更新檔](https://paul90317.github.io/MinecraftServers/publish/MinecraftServers.application)  
 * 下載點擊後自動更新!!!  
 
