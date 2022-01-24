@@ -121,6 +121,7 @@ namespace MinecraftServers
         private void SelectForm_Load(object sender, EventArgs e)
         {
             DirectoryInfo dirt = useful.get_dir_or_create(Dir.FullName + "/datas");
+            button1.Text += label3.Text;
             string errs = "";
             foreach (var m in dirt.GetFiles())  
             {
@@ -226,6 +227,7 @@ namespace MinecraftServers
         private void button1_Click(object sender, EventArgs e)
         {
             ImportForm ifo = new ImportForm(Dir, Filter);
+            ifo.what = label3.Text;
             ifo.ShowDialog();
             if (ifo.tags.Count == 0)
             {

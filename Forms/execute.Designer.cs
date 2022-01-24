@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(execute));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.選擇JavaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.記憶體GBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -252,9 +253,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "execute";
-            this.Text = "execute";
+            this.Text = "MinecraftServers";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.execute_FormClosing);
             this.Load += new System.EventHandler(this.execute_Load);
             this.menuStrip1.ResumeLayout(false);

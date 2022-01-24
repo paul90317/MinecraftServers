@@ -83,6 +83,26 @@ namespace MinecraftServers.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap minecraftServers_透明 {
+            get {
+                object obj = ResourceManager.GetObject("minecraftServers 透明", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap minecraftServers_透明1 {
+            get {
+                object obj = ResourceManager.GetObject("minecraftServers 透明1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap mmnuzC0 {
             get {
                 object obj = ResourceManager.GetObject("mmnuzC0", resourceCulture);
@@ -96,6 +116,16 @@ namespace MinecraftServers.Properties {
         internal static System.Drawing.Bitmap 暗 {
             get {
                 object obj = ResourceManager.GetObject("暗", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 霧化背景 {
+            get {
+                object obj = ResourceManager.GetObject("霧化背景", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -184,7 +184,7 @@ namespace MinecraftServers.Forms
                     if (jarf.Extension == ".jar")
                     {
                         sw.WriteLine("@echo off");
-                        sw.WriteLine(String.Format("\"{0}\" -Xmx{2}G -Xms{2}G -jar \"{1}\" nogui", vc.javapath, jarf_str, mem));
+                        sw.WriteLine(String.Format("\"{0}\" -Xmx{2}G -Xms{2}G -jar \"{1}\" nogui", vc.javapath, jarf.Name, mem));
                     }
                     else
                     {

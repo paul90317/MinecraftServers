@@ -199,5 +199,25 @@ namespace MinecraftServers.Forms
             sf.Filter = "JAR|*.jar";
             sf.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (mb_sel == null)
+            {
+                MessageBox.Show("請選擇模組");
+                return;
+            }
+            string gamedir = mb_sel.datas["gameDir"];
+            if (gamedir == null)
+            {
+                gamedir = lproc.DirectoryName;
+            }
+            SelectForm sf = new SelectForm();
+            sf.Dir = new DirectoryInfo("./resourcepacks/");
+            sf.localDir = useful.get_dir_or_create(gamedir + "/resourcepacks");
+            sf.title = "材質包";
+            sf.Filter = "ZIP|*.zip";
+            sf.ShowDialog();
+        }
     }
 }

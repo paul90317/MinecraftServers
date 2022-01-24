@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModsConcurrencyForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -225,10 +226,13 @@
             this.ClientSize = new System.Drawing.Size(313, 325);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ModsConcurrencyForm";
-            this.Text = "ModsConcurrencyForm";
+            this.Text = "MinecraftServers";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModsConcurrencyForm_FormClosing);
             this.Load += new System.EventHandler(this.ModsConcurrencyForm_Load);
             this.tabControl1.ResumeLayout(false);

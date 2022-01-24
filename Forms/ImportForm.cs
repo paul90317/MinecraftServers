@@ -26,7 +26,13 @@ namespace MinecraftServers.Forms
             openFileDialog1.Multiselect = true;
         }
         DirectoryInfo Dir;
-
+        public string what
+        {
+            set
+            {
+                button2.Text += value;
+            }
+        }
         private void flowLayoutPanel3_Paint(object sender, PaintEventArgs e)
         {
 

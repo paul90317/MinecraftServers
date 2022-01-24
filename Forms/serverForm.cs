@@ -228,7 +228,7 @@ namespace MinecraftServers
         {
             SelectForm sf = new SelectForm();
             sf.Dir = useful.get_dir_or_create("./versions/" + label3.Text + "./plugins");
-            sf.localDir = useful.get_dir_or_create(serverDir.FullName + "/world/plugins");
+            sf.localDir = useful.get_dir_or_create(serverDir.FullName + "/plugins");
             sf.title = "插件";
             sf.Filter = "JAR|*.jar";
             sf.ShowDialog();

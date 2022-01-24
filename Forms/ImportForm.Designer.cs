@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ImportForm));
             this.panel3 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -42,14 +43,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -215,6 +216,20 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // flowLayoutPanel8
+            // 
+            this.flowLayoutPanel8.BackgroundImage = global::MinecraftServers.Properties.Resources.暗;
+            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel8.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 204);
+            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
+            this.flowLayoutPanel8.Size = new System.Drawing.Size(861, 242);
+            this.flowLayoutPanel8.TabIndex = 7;
+            // 
             // flowLayoutPanel5
             // 
             this.flowLayoutPanel5.BackgroundImage = global::MinecraftServers.Properties.Resources._2ca5c8f401faa40d;
@@ -237,7 +252,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 38);
             this.button2.TabIndex = 1;
-            this.button2.Text = "建立模組";
+            this.button2.Text = "建立";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -289,20 +304,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "名稱";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // flowLayoutPanel8
-            // 
-            this.flowLayoutPanel8.BackgroundImage = global::MinecraftServers.Properties.Resources.暗;
-            this.flowLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel8.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(0, 204);
-            this.flowLayoutPanel8.Name = "flowLayoutPanel8";
-            this.flowLayoutPanel8.Size = new System.Drawing.Size(861, 242);
-            this.flowLayoutPanel8.TabIndex = 7;
-            // 
             // ImportForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -315,9 +316,10 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ImportForm";
-            this.Text = "ImportForm";
+            this.Text = "MinecraftServers";
             this.Load += new System.EventHandler(this.ImportForm_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
