@@ -354,11 +354,12 @@
     <None Include="Resources\背景.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="acf0t-3okvw-001.ico" />
-    <Content Include="am4d1-66t7z-001.ico" />
     <None Include="Resources\minecraftServers 透明1.png" />
     <None Include="Resources\霧化背景.png" />
     <None Include="Resources\minecraftServers 透明.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="am4d1-66t7z-001.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />

@@ -26,6 +26,8 @@ namespace MinecraftServers
         {
             try
             {
+                //useful.get_dir_or_create(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/MinecraftServers-Datas");
+                //Directory.SetCurrentDirectory(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/MinecraftServers-Datas");
                 useful.get_dir_or_create("../MinecraftServers-Datas");
                 Directory.SetCurrentDirectory("../MinecraftServers-Datas");
             }

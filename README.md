@@ -4,9 +4,9 @@ This is an application that can create server easily
 
 ## 下載
 
-[免安裝檔](https://paul90317.github.io/MinecraftServers/publish.zip)  
+[免安裝檔](https://github.com/paul90317/MinecraftServers/raw/main/publish.zip)  
 
 ## 相關頁面  
 
-[page 首頁](https://paul90317.github.io/MinecraftServers/)  
 [原始碼](https://github.com/paul90317/MinecraftServers/)  
+[youtube 示範影片](https://www.youtube.com/watch?v=oJnsTmI1E0E&t=828s)  
