@@ -198,7 +198,7 @@ namespace MinecraftServers.Forms
                                 if (line.IndexOf("java") == 0)
                                 {
                                     line += " nogui";
-                                    line = line.Replace("java", vc.javapath);
+                                    line = line.Replace("java", string.Format("\"{0}\" -Xmx{1}G -Xms{1}G", vc.javapath, mem));
                                 }
                                 sw.WriteLine(line);
                             }
