@@ -15,6 +15,7 @@ namespace MinecraftServers.Forms
         public menu()
         {
             InitializeComponent();
+            label2.Text = Program.version;
         }
 
         private void label1_Click(object sender, EventArgs e)

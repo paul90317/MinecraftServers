@@ -21,9 +21,21 @@ namespace MinecraftServers
 
         static public Form now = null;
         static public Dictionary<string, string[]> properties_show=new Dictionary<string, string[]>();
+        static public string version = "1.0.0";
         [STAThread]
         static void Main()
         {
+            try
+            {
+                using(StreamWriter sw=new StreamWriter("version.txt"))
+                {
+                    sw.WriteLine(version);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             try
             {
                 //useful.get_dir_or_create(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/MinecraftServers-Datas");
