@@ -6,7 +6,7 @@ This is an application that can create server easily
 
 [免安裝檔](https://github.com/paul90317/MinecraftServers/raw/main/publish.zip)  
 [原地安裝執行檔 (推薦)](https://github.com/paul90317/MinecraftServers/raw/main/MinecraftServers.zip)  
-* 點擊 MinecraftServers_latest.exe 自動安裝最新版本並自動執行。
+* 點擊 MinecraftServers_update.exe 自動安裝最新版本並自動執行。
 
 ## 相關頁面  
 
