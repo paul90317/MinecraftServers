@@ -21,7 +21,7 @@ namespace MinecraftServers
 
         static public Form now = null;
         static public Dictionary<string, string[]> properties_show=new Dictionary<string, string[]>();
-        static public string version = "1.0.0";
+        static public string version = "1.0.1";
         [STAThread]
         static void Main()
         {

@@ -264,6 +264,7 @@ namespace MinecraftServers.Forms
                     changed3 = true;
                 }
                 bool err = false;
+                useful.get_dir_or_create(versionFileDir.FullName + "/temp/");
                 foreach (string f in files)
                 {
                     string temp_file = versionFileDir.FullName + "/temp/" + f;
