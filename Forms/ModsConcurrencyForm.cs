@@ -264,14 +264,13 @@ namespace MinecraftServers.Forms
                     changed3 = true;
                 }
                 bool err = false;
-                for (int i = 0; i < files.Length - 1; i++)
+                foreach (string f in files)
                 {
-                    string f = files[i];
-                    string fullname = shareDir.FullName + "/" + f;
+                    string temp_file = versionFileDir.FullName + "/temp/" + f;
                     string glbfile = versionFileDir.FullName + "/" + f;
                     if (!File.Exists(glbfile))
                     {
-                        bool fd = fc.GetFile(f, glbfile);
+                        bool fd = fc.GetFile(f, temp_file);
                         if (fd)
                         {
                             lock (output3)
@@ -279,6 +278,7 @@ namespace MinecraftServers.Forms
                                 output3 += "已下載: " + f + "\r\n";
                                 changed3 = true;
                             }
+                            File.Copy(temp_file, glbfile);
                         }
                         else
                         {
@@ -290,10 +290,11 @@ namespace MinecraftServers.Forms
                             err = true;
                         }
                     }
-                    if (!File.Exists(fullname))
-                    {
-                        File.Copy(glbfile, fullname, true);
-                    }
+                }
+                if(err)
+                {
+                    MessageBox.Show("同步失敗: \r\n未完整下載所有模組");
+                    return;
                 }
                 FileInfo[] del_fs = shareDir.GetFiles();
                 foreach (var file in del_fs)
@@ -303,14 +304,18 @@ namespace MinecraftServers.Forms
                         File.Delete(file.FullName);
                     }
                 }
-                if (!err)
-                    MessageBox.Show("同步完成");
-                else
-                    MessageBox.Show("同步失敗");
+                foreach (string f in files)
+                {
+                    string glbfile = versionFileDir.FullName + "/" + f;
+                    string fullname = shareDir.FullName + "/" + f;
+                    File.Copy(glbfile, fullname, true);
+                }
+                MessageBox.Show("同步完成");
+                
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("同步失敗:\r\n" + ex.Message);
                 return;
             }
         }

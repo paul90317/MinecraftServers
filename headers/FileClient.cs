@@ -26,7 +26,9 @@ namespace MinecraftServers.headers
             int len = client.Receive(data_back);
             sdata = System.Text.Encoding.Unicode.GetString(data_back, 0, len);
             client.Close();
-            return sdata.Split('&');
+            var files=sdata.Split('&');
+            Array.Resize(ref files, files.Length - 1);
+            return files;
         }
         public bool GetFile(string filename,string local_path)
         {
