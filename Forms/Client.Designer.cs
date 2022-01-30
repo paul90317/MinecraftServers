@@ -34,12 +34,13 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +74,7 @@
             // 
             this.panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.panel2.BackgroundImage = global::MinecraftServers.Properties.Resources._2ca5c8f401faa40d;
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -84,13 +86,27 @@
             this.panel2.Size = new System.Drawing.Size(658, 73);
             this.panel2.TabIndex = 1;
             // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::MinecraftServers.Properties.Resources.mmnuzC0;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(108, 9);
+            this.button4.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(87, 52);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "材質包";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackgroundImage = global::MinecraftServers.Properties.Resources.mmnuzC0;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(407, 9);
+            this.button2.Location = new System.Drawing.Point(408, 9);
             this.button2.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 52);
@@ -151,19 +167,20 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "修改客戶端";
             // 
-            // button4
+            // button5
             // 
-            this.button4.BackgroundImage = global::MinecraftServers.Properties.Resources.mmnuzC0;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(108, 9);
-            this.button4.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(87, 52);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "材質包";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackgroundImage = global::MinecraftServers.Properties.Resources.mmnuzC0;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(290, 9);
+            this.button5.Margin = new System.Windows.Forms.Padding(9, 12, 9, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(113, 52);
+            this.button5.TabIndex = 8;
+            this.button5.Text = "檔案總管";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Client
             // 
@@ -200,5 +217,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

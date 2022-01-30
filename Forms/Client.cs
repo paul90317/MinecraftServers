@@ -11,6 +11,7 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using MinecraftServers.Controls;
+using System.Diagnostics;
 
 namespace MinecraftServers.Forms
 {
@@ -218,6 +219,21 @@ namespace MinecraftServers.Forms
             sf.title = "材質包";
             sf.Filter = "ZIP|*.zip";
             sf.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (mb_sel == null)
+            {
+                MessageBox.Show("請選擇模組");
+                return;
+            }
+            string gamedir = mb_sel.datas["gameDir"];
+            if (gamedir == null)
+            {
+                gamedir = lproc.DirectoryName;
+            }
+            Process.Start(gamedir);
         }
     }
 }

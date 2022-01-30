@@ -177,6 +177,10 @@ namespace MinecraftServers.Forms
                     MessageBox.Show("記憶體要是正整數");
                     return;
                 }
+                using (StreamWriter sw = new StreamWriter(Dir.FullName + "/config.txt"))
+                {
+                    sw.WriteLine(mem.ToString());
+                }
                 using (StreamWriter sw = new StreamWriter(Dir.FullName + "/runServer.bat"))
                 {
                     FileInfo jarf = new FileInfo(vc.jarfile);

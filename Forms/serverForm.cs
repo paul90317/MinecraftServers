@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using MinecraftServers.Controls;
 using MinecraftServers.Forms;
+using System.Diagnostics;
 
 namespace MinecraftServers
 {
@@ -232,6 +233,11 @@ namespace MinecraftServers
             sf.title = "插件";
             sf.Filter = "JAR|*.jar";
             sf.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Process.Start(serverDir.FullName);
         }
     }
 }
